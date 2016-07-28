@@ -1,6 +1,6 @@
 ﻿//using System.Web.Mvc;
 
-//namespace Membership.Site.Web.Controllers
+//namespace Membership.Site.Controllers
 //{
 //    public class AccountController : Controller
 //    {

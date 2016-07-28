@@ -14,3 +14,6 @@ Veritabanının güncellenmesi
 Model üzerindeki değişiklikler, bu dosyaya aktarılır. Sadece veri eklenecek ise, model üzerinde herhangi bir (küçük) değişiklik yapılmalıdır.
 2)update-database komutu çağrılır.
 Farklar uygulanır. Seed metodu tekrar çağrılır. (Aynı kayıtları tekrar ekleme durumu var.Id varsa, tekrar eklemez. Id olmayan durumlara dikkat edilmelidir.)
+
+
+unInstall-Package Microsoft.AspNet.Mvc -Version 5.2.2

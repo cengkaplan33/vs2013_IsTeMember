@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Membership.Web
+namespace Membership.Site.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -13,6 +13,18 @@ namespace Membership.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+
+                void Application_BeginRequest(object sender, EventArgs e)
+        {
+        }
+
+        protected void Application_PreRequestHandlerExecute(Object sender, EventArgs e)
+        {
+        }
+
+        protected void Application_EndRequest(Object sender, EventArgs e)
+        {
         }
     }
 }
