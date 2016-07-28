@@ -17,3 +17,7 @@ Farklar uygulanır. Seed metodu tekrar çağrılır. (Aynı kayıtları tekrar e
 
 
 unInstall-Package Microsoft.AspNet.Mvc -Version 5.2.2
+
+Install-Package entityfram...
+
+C:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS__OK\MSSQL\DATA

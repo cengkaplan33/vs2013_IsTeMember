@@ -86,13 +86,9 @@
     <Compile Include="Domain\VertificationModel\VertificationModel.cs" />
     <Compile Include="Domain\Web\WebUser.cs" />
     <Compile Include="Domain\Web\WebUserIp.cs" />
-    <Compile Include="Migrations\201607280836480_Initial.cs" />
-    <Compile Include="Migrations\201607280836480_Initial.Designer.cs">
-      <DependentUpon>201607280836480_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607280840585_InitialV1.cs" />
-    <Compile Include="Migrations\201607280840585_InitialV1.Designer.cs">
-      <DependentUpon>201607280840585_InitialV1.cs</DependentUpon>
+    <Compile Include="Migrations\201607282151168_Initial.cs" />
+    <Compile Include="Migrations\201607282151168_Initial.Designer.cs">
+      <DependentUpon>201607282151168_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,15 +98,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607280836480_Initial.resx">
-      <DependentUpon>201607280836480_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607280840585_InitialV1.resx">
-      <DependentUpon>201607280840585_InitialV1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Migrations\Help.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Migrations\Help.txt" />
+    <EmbeddedResource Include="Migrations\201607282151168_Initial.resx">
+      <DependentUpon>201607282151168_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

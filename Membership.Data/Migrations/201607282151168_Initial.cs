@@ -95,10 +95,48 @@ namespace Membership.Data.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.WebUserIp",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        WebUserId = c.Int(nullable: false),
+                        Ip = c.String(),
+                        RequestIp = c.String(),
+                        CreateTime = c.DateTime(),
+                        UpdateTime = c.DateTime(),
+                        DeleteTime = c.DateTime(),
+                        CreatedBy = c.Int(),
+                        UpdatedBy = c.Int(),
+                        DeletedBy = c.Int(),
+                        IsDeleted = c.Byte(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.WebUser",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        ApplicationId = c.Int(nullable: false),
+                        Email = c.String(maxLength: 20),
+                        RequestIp = c.String(),
+                        CreateTime = c.DateTime(),
+                        UpdateTime = c.DateTime(),
+                        DeleteTime = c.DateTime(),
+                        CreatedBy = c.Int(),
+                        UpdatedBy = c.Int(),
+                        DeletedBy = c.Int(),
+                        IsDeleted = c.Byte(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropTable("dbo.WebUser");
+            DropTable("dbo.WebUserIp");
             DropTable("dbo.Application");
             DropTable("dbo.Account");
             DropTable("dbo.AccountAddress");

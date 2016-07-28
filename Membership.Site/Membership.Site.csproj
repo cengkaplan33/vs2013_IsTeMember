@@ -102,6 +102,12 @@
     <Folder Include="Module\Domain\" />
     <Folder Include="Module\Group\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Membership.Business\Membership.Business.csproj">
+      <Project>{fa55db25-b319-4c07-a340-094c16ec495f}</Project>
+      <Name>Membership.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

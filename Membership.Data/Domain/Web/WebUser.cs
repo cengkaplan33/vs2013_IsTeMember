@@ -20,7 +20,7 @@ namespace Membership.Core.Domain.Web
         [MaxLength(30)]
         public string DisplayName;
 
-        [MaxLength(200)]
+        [MaxLength(100)]
         public string PasswordHash;
 
         [MaxLength(10)]
@@ -32,6 +32,7 @@ namespace Membership.Core.Domain.Web
         /// <summary>
         /// Aynı zamanda username için kullanılacak unique olmalı ve site girişlerinde kullanılacak.
         /// </summary>
-        public string Email;
+        [MaxLength(20)]
+        public string Email { get; set; }
     }
 }
