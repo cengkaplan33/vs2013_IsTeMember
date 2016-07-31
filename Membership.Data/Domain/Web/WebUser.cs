@@ -18,7 +18,7 @@ namespace Membership.Core.Domain.Web
         public int ApplicationId { get; set; }
 
         [MaxLength(30)]
-        public string DisplayName;
+        public string DisplayName { get; set; }
 
         [MaxLength(100)]
         public string PasswordHash;
@@ -27,7 +27,7 @@ namespace Membership.Core.Domain.Web
         public string PasswordSalt;
 
         [MaxLength(20)]
-        public string Password;
+        public string Password { get; set; }
 
         /// <summary>
         /// Aynı zamanda username için kullanılacak unique olmalı ve site girişlerinde kullanılacak.

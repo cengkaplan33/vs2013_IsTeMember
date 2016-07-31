@@ -15,7 +15,7 @@
                     //ServerSide
                 public ActionResult action(FormColection col, string ReturnUrl){         }
             *@
-            <form role="form" id="loginForm" action="~/SiteAuthenticate/Signin" method="post">
+            <form role="form" id="loginForm" action="Signin" method="post">
                 <h3 class="text-center margin-xl-bottom">Welcome Back!</h3>
                 <div class="form-group text-center">
                     <label class="sr-only" for="email">Email Address</label>
@@ -44,8 +44,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    onDocumentReady(function ($) {
 
-});
-</script>
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () { /// $ not defined.
+            // .....
+        });
+    </script>
+    <script src=""></script>
+}

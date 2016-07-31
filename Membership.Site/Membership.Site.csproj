@@ -72,9 +72,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\Application\ApplicationModel.cs" />
+    <Compile Include="Controllers\Application\ApplicationService.cs" />
+    <Compile Include="Controllers\Application\GroupController.cs" />
+    <Compile Include="Controllers\Application\AccountController.cs" />
+    <Compile Include="Controllers\Application\DomainController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\Application\ApplicationController.cs" />
+    <Compile Include="Controllers\derrController.cs" />
+    <Compile Include="Controllers\EmptyController.cs" />
+    <Compile Include="Controllers\SSSController.cs" />
+    <Compile Include="Controllers\WithReadController.cs" />
     <Compile Include="Core\ContextItems.cs" />
     <Compile Include="Core\ServiceHandler.cs" />
+    <Compile Include="Core\Services\Helpers\AuthorizationFilter.cs" />
     <Compile Include="Core\Services\Helpers\BaseController.cs" />
+    <Compile Include="Core\Services\Helpers\Constant.cs" />
     <Compile Include="Core\Services\Helpers\Json\JsonHelpers.cs" />
     <Compile Include="Core\Services\Helpers\Json\JsonNetResult.cs" />
     <Compile Include="Core\Services\Helpers\LogActionFilter.cs" />
@@ -93,6 +106,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System\Security\LoginPageModel.cs" />
     <Compile Include="System\Security\SecurityHelper.cs" />
+    <Compile Include="System\SiteAuthenticateController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

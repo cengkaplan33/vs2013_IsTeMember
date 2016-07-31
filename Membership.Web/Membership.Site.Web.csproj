@@ -98,6 +98,9 @@
     <Content Include="Theme\assets\bs3\js\bootstrap.min.js" />
     <Content Include="Theme\assets\font-awesome\css\font-awesome.css" />
     <Content Include="Theme\assets\font-awesome\fonts\fontawesome-webfont862f.svg" />
+    <Content Include="Theme\assets\libs\cengaver\cengaver.js" />
+    <Content Include="Theme\assets\libs\cengaver\jquery.blockUI.js" />
+    <Content Include="Theme\assets\libs\cengaver\jquery.json.js" />
     <Content Include="Theme\assets\libs\jquery-ui\minified\jquery-ui.min.js" />
     <Content Include="Theme\assets\libs\jquery\jquery.min.js" />
     <Content Include="Theme\assets\plugins\bootbox\bootbox.js" />
@@ -293,15 +296,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AccountController - Copy - Copy.cs" />
-    <Compile Include="Controllers\AccountController - Copy.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\DashboardController.cs" />
-    <Compile Include="Controllers\derrController.cs" />
-    <Compile Include="Controllers\EmptyController.cs" />
-    <Compile Include="Controllers\SiteAuthenticateController.cs" />
-    <Compile Include="Controllers\SSSController.cs" />
-    <Compile Include="Controllers\WithReadController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -320,7 +314,6 @@
     <Content Include="Theme\assets\font-awesome\fonts\fontawesome-webfont862f.ttf" />
     <Content Include="Theme\assets\font-awesome\fonts\fontawesome-webfont862f.woff" />
     <Content Include="Theme\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
-    <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -331,7 +324,10 @@
     <Content Include="Views\Shared\_TopNavbar.cshtml" />
     <Content Include="Views\SiteAuthenticate\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\derr\Index.cshtml" />
+    <Content Include="Views\Application\Index.cshtml" />
+    <Content Include="Views\Membership\Domain\Index.cshtml" />
+    <Content Include="Views\Membership\Group\Index.cshtml" />
+    <Content Include="Views\Membership\Account\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -341,10 +337,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllerse\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Empty\" />
-    <Folder Include="Views\SSS\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Membership.Site\Membership.Site.csproj">
