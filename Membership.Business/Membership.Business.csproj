@@ -50,9 +50,6 @@
     <Compile Include="Manager\WebUserManager.cs" />
     <Compile Include="Models\Web\WebUser.cs" />
     <Compile Include="Models\Web\WebUserIp.cs" />
-    <Compile Include="Common\GenericRepository.cs" />
-    <Compile Include="Common\IRepository.cs" />
-    <Compile Include="Repository\WebUserRepository.cs" />
     <Compile Include="Security\WebUserAuthenticationProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

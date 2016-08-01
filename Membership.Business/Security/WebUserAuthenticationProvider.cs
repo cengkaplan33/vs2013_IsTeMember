@@ -1,4 +1,4 @@
-﻿using Membership.Business.Repository;
+﻿using Membership.Business.Manager;
 using System;
 
 namespace Membership.Business.Security
@@ -9,17 +9,12 @@ namespace Membership.Business.Security
         {
             try
             {
-                Core.Domain.Web.WebUser webUser;
-                using (var db = new Membership.Data.DomainEfModel())
-                    webUser = new WebUserRepository(db).GetObjectByParameters(p => p.Email == userName);
+                var webUser = new WebUserManager().ValidateUser(userName, password);
 
                 if (webUser == null)
                     return false;
 
-                if (webUser.Password == password)
-                    return true;
-
-                return false;
+                return true;
             }
             catch (Exception exception)
             {
