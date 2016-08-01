@@ -1,7 +1,5 @@
-﻿
-using Membership.Site.Model;
+﻿using Membership.Site.Model;
 using System;
-using System.Linq;
 
 namespace Membership.Site.Services
 {
@@ -9,8 +7,6 @@ namespace Membership.Site.Services
     public class ApplicationListRequest : ListRequest
     {
         public int TaskId { get; set; }
-        public int Skip { get; set; }
-        public int Take { get; set; }
     }
 
     public partial class ApplicationService

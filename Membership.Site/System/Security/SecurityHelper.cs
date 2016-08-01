@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Membership.Business.Security;
+using Membership.Site.Model;
+using Membership.Site.Services;
+using System;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Security;
-using System.Text;
-using System.IO;
-using Membership.Business.Security;
 
 namespace Membership.Site
 {
@@ -273,30 +273,35 @@ namespace Membership.Site
                 if (String.IsNullOrEmpty(username))
                     return null;
 
+
+                var user = new WebUserService().LoggedUser();
                 //var user = UserCache.ByUsername(username);
-                //if (user == null)
-                //    return null;
+                if (user == null || user.Entity == null)
+                    return null;
 
-                //return user.UserId;
+                return user.Entity.Id;
 
-                return 1;
+                //return 3;
             }
         }
 
-        //public static Surat.Web.Security.UserCache.Item LoggerUserItem
-        //{
-        //    get
-        //    {
-        //        string username = LoggedUser;
-        //        if (username.IsEmptyOrNull())
-        //            return null;
+        public static WebUser LoggerUserItem
+        {
+            get
+            {
+                string username = LoggedUser;
+                if (username.IsEmptyOrNull())
+                    return null;
 
-        //        var user = UserCache.ByUsername(username);
-        //        return user;
-        //    }
-        //}
+                var response = new WebUserService().LoggedUser();
+                if (response == null || response.Entity == null)
+                    return null;
 
-        
+                return response.Entity;
+            }
+        }
+
+
         public static Int32? CurrentUserIdOrNull
         {
             get

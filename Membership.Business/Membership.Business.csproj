@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\WebUserManager.cs" />
     <Compile Include="Models\Web\WebUser.cs" />
     <Compile Include="Models\Web\WebUserIp.cs" />
     <Compile Include="Common\GenericRepository.cs" />

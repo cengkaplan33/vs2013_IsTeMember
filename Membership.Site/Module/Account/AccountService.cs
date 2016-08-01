@@ -1,5 +1,4 @@
-﻿
-using Membership.Site.Model;
+﻿using Membership.Site.Model;
 using System.Linq;
 
 namespace Membership.Site.Services

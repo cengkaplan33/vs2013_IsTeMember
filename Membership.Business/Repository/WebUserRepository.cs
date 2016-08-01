@@ -1,10 +1,7 @@
 ﻿using Membership.Core.Domain.Web;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Membership.Business.Repository
 {

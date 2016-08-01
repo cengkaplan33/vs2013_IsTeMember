@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Test_BusinessLayer
 {
@@ -10,6 +6,15 @@ namespace Test_BusinessLayer
     {
         static void Main(string[] args)
         {
+            try
+            {
+                var ss = new Membership.Business.Manager.WebUserManager().LoggedUser("ok@g.com");
+                Console.WriteLine(ss.DisplayName);
+            }
+            catch (Exception ex)
+            {
+            }
+            Console.ReadKey();
         }
     }
 }
