@@ -96,9 +96,6 @@
     <Compile Include="Core\Services\Models\ServiceRequest.cs" />
     <Compile Include="Core\Services\Models\ServiceResponse.cs" />
     <Compile Include="Core\StringHelper.cs" />
-    <Compile Include="Module\Account\AccountController.cs" />
-    <Compile Include="Module\Account\AccountModel.cs" />
-    <Compile Include="Module\Account\AccountService.cs" />
     <Compile Include="Module\WebUser\WebUserController.cs" />
     <Compile Include="Module\WebUser\WebUserModel.cs" />
     <Compile Include="Module\WebUser\WebUserRequestResponse.cs" />
