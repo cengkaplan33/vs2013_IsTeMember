@@ -1,10 +1,10 @@
-﻿using Membership.Core.Domain.Web;
+﻿using Membership.Core.Domain.Application;
 
 namespace Membership.Data.Repository
 {
-    public class WebUserRepository : GenericRepository<WebUser>
+    public class ApplicationRepository : GenericRepository<Application>
     {
-        public WebUserRepository()
+        public ApplicationRepository()
             : base(new DomainEfModel())
         {
 

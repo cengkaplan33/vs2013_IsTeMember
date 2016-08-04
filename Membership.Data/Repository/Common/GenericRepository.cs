@@ -78,6 +78,8 @@ namespace Membership.Data.Repository
                 this.dbSet.Add(entity);
               
             }
+
+            this.GenericDBContext.SaveChanges();
         }
 
         public void Update(T entity)
@@ -90,6 +92,8 @@ namespace Membership.Data.Repository
             }
 
             entry.State = EntityState.Modified;
+
+            this.GenericDBContext.SaveChanges();
         }
 
         public void Delete(T entity)

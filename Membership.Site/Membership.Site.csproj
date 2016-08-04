@@ -88,6 +88,10 @@
     <Compile Include="Core\Services\Helpers\Json\JsonNetResult.cs" />
     <Compile Include="Core\Services\Helpers\LogActionFilter.cs" />
     <Compile Include="Core\Services\Helpers\MVCUtility.cs" />
+    <Compile Include="Core\Services\Models\CreateRequest.cs" />
+    <Compile Include="Core\Services\Models\CreateResponse.cs" />
+    <Compile Include="Core\Services\Models\DeleteRequest.cs" />
+    <Compile Include="Core\Services\Models\DeleteResponse.cs" />
     <Compile Include="Core\Services\Models\ListRequest.cs" />
     <Compile Include="Core\Services\Models\ListResponse.cs" />
     <Compile Include="Core\Services\Models\RetrieveRequest.cs" />
@@ -95,6 +99,8 @@
     <Compile Include="Core\Services\Models\ServiceError.cs" />
     <Compile Include="Core\Services\Models\ServiceRequest.cs" />
     <Compile Include="Core\Services\Models\ServiceResponse.cs" />
+    <Compile Include="Core\Services\Models\UpdateRequest.cs" />
+    <Compile Include="Core\Services\Models\UpdateResponse.cs" />
     <Compile Include="Core\StringHelper.cs" />
     <Compile Include="Module\WebUser\WebUserController.cs" />
     <Compile Include="Module\WebUser\WebUserModel.cs" />
