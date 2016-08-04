@@ -325,11 +325,12 @@
     <Content Include="Views\SiteAuthenticate\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Application\Index.cshtml" />
-    <Content Include="Views\Membership\Domain\Index.cshtml" />
+    <Content Include="Views\Membership\Directory\Edit.cshtml" />
     <Content Include="Views\Membership\Group\Index.cshtml" />
     <Content Include="Views\Membership\Account\Index.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Application\Edit.cshtml" />
+    <Content Include="Views\Membership\Directory\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

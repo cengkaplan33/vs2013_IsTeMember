@@ -162,7 +162,7 @@
                 event.preventDefault();
                 var id = $('#Id').val().trim();
                 if ($("#ApplicationEditForm").valid()) {
-                    alert("done " + $('#ApplicationEditForm').serialize());
+                   // alert("done " + $('#ApplicationEditForm').serialize());
                     $.cengaver.callService({
                         service: (id > 0 ?'/Application/Update' : '/Application/Create'),
                         request: {
@@ -193,7 +193,7 @@
                     });
                 }
                 else {
-                    alert("false");
+                    alert("Lütfen zorunlu alanları doldurunuz!");
                 }
             });
             

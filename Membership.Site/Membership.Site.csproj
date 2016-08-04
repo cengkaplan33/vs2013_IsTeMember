@@ -72,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\Directory\DirectoryController.cs" />
+    <Compile Include="Controllers\Directory\DirectoryModel.cs" />
+    <Compile Include="Controllers\Directory\DirectoryService.cs" />
     <Compile Include="Controllers\Application\ApplicationModel.cs" />
     <Compile Include="Controllers\Application\ApplicationService.cs" />
     <Compile Include="Controllers\Application\GroupController.cs" />
